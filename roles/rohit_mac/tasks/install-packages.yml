@@ -1,0 +1,15 @@
+- name: Install homebrew packages
+  homebrew:
+    name: '{{ homebrew_packages }}'
+    state: latest
+  tags:
+  - brew
+
+- name: Install cask with install options
+  community.general.homebrew_cask:
+    name: '{{ homebrew_cask_packages }}'
+    state: present
+    install_options: 'appdir=/Applications'
+
+- name: homebrew cleanup
+  command: brew cleanup

@@ -1,0 +1,14 @@
+homebrew_packages:
+- git
+- zsh-autosuggestions
+- zsh-syntax-highlighting
+- htop
+
+homebrew_cask_packages:
+- iterm2
+- sublime-text
+- google-chrome
+- alfred
+- whatsapp
+- steam
+- amethyst
