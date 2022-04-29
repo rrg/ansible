@@ -1,7 +1,3 @@
-- debug:
-    msg: Before Setup-zsh, Check if we are running in the directory of the script
-  failed_when: not ansible_env.PWD.endswith('/.ansible')
-
 
 # Clean Oh My ZSH directory
 - name: Install Oh My ZSH
