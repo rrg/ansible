@@ -5,6 +5,7 @@
 
   vars:
     sublime_base_path: "~/Library/Application Support/Sublime Text"
+    dotfiles_path: "~/ansible/dotfiles"
 
   tasks:
   - debug:
@@ -15,8 +16,12 @@
   # - name: Install Homebrew Packages
   #   import_tasks: tasks/homebrew-packages.yml 
 
-  # - name: Install ZSH shell
-  #   import_tasks: tasks/setup-zsh.yml  
-
   # - name: OSX Defaults
   #   import_tasks: tasks/osx-defaults.yml
+
+  # - name: Install all things terminal
+  #   import_tasks: tasks/setup-terminal.yml  
+
+  - name: Setup/Symlink dotfiles from /dotfiles folder
+    import_tasks: tasks/setup-dotfiles.yml  
+

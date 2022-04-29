@@ -29,7 +29,6 @@ pushd $dotfiles_path
 vector=(
 	zsh 
 	nvim 
-	# sublime
 )
 
 for folder in $vector
