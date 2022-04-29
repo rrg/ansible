@@ -1,5 +1,0 @@
-# - name: Basic settings
-#   import_tasks: basic_settings.yml
-
-- name: Install things
-  import_tasks: install-packages.yml

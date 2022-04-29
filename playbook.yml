@@ -1,13 +1,14 @@
 #!/usr/bin/env ansible-playbook
 - hosts: localhost
   connection: local
+  # become: true
   tasks:
   - debug:
       msg: Check we are running in the directory of the script
     failed_when: not ansible_env.PWD.endswith('/ansible')
 
-
-- hosts: localhost
-  connection: local
-  roles:
-  - rohit_mac
+  # List of modular plays
+  - name: Install things
+    import_tasks: tasks/install-packages.yml  
+  - name: OSX Defaults
+    import_tasks: tasks/osx-defaults.yml
