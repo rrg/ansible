@@ -1,0 +1,58 @@
+- debug:
+    msg: Check we are running in the directory of the script
+  failed_when: not ansible_env.PWD.endswith('/.ansible')
+
+
+- debug:
+    msg: "Update Homebrew"
+
+- name: Update homebrew
+  homebrew:
+    name: git
+    state: latest
+    update_homebrew: true
+  tags:
+  - brew
+
+- debug:
+    msg: "Install Homebrew Packages"
+
+- name: Install homebrew packages
+  vars:
+    homebrew_packages:
+      - zsh
+      - git
+      - htop
+      - fzf
+      - neovim
+      - tmux
+      - mosh
+      - tree
+      - wget
+      - stow
+  homebrew:
+    name: '{{ homebrew_packages }}'
+    state: latest
+  tags:
+  - brew
+
+- debug:
+    msg: "Install Cask Packages"
+
+# - name: Install cask with install options
+#   vars:
+#     homebrew_cask_packages:
+#       - iterm2
+#       - sublime-text
+#       - google-chrome
+#       - alfred
+#       - whatsapp
+#       - steam
+#       - amethyst
+#   community.general.homebrew_cask:
+#     name: '{{ homebrew_cask_packages }}'
+#     state: present
+#     install_options: 'appdir=/Applications'
+
+- name: homebrew cleanup
+  command: brew cleanup

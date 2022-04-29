@@ -1,16 +1,16 @@
+# Dock
 - name: Dock one
   command: defaults write com.apple.dock persistent-apps -array
 
 - name: Dock two
   command: defaults write com.apple.dock autohide -bool true
 
-
+# Inputs
 - name: Keyboard
-  command: defaults write NSGlobalDomain KeyRepeat -int 2
+  command: defaults write NSGlobalDomain KeyRepeat -int 1
 
 - name: Mouse
   command: defaults write NSGlobalDomain com.apple.mouse.scaling -int 3
-
 
 - name: Trackpad
   command: defaults write NSGlobalDomain com.apple.trackpad.scaling -int 3
