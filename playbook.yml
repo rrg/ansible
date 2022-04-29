@@ -12,6 +12,11 @@
       msg: Check we are running in the directory of the script
     failed_when: not ansible_env.PWD.endswith('/ansible')
 
+  - name: Execute shell script that stows all symlinks
+    ansible.builtin.shell:
+      cmd: find . -name ".DS_Store" -delete
+
+
   # Plays
   # - name: Install Homebrew Packages
   #   import_tasks: tasks/homebrew-packages.yml 
@@ -22,6 +27,7 @@
   # - name: Install all things terminal
   #   import_tasks: tasks/setup-terminal.yml  
 
-  - name: Setup/Symlink dotfiles from /dotfiles folder
-    import_tasks: tasks/setup-dotfiles.yml  
+  - name: Execute shell script that stows all symlinks
+    ansible.builtin.shell:
+      cmd: sh ./dotfiles/install.sh
 

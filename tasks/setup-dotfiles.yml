@@ -1,3 +1,0 @@
-- name: Execute shell script that stows all symlinks
-  ansible.builtin.shell:
-    cmd: sh ./dotfiles/install.sh
