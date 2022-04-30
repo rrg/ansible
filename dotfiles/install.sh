@@ -21,6 +21,7 @@ pushd $dotfiles_path
 # manually delete them. TODO figure out way to delete
 rm -f ~/.zshrc
 rm -f ~/.gitconfig
+rm -f ~/.gitignore
 
 # nvim is usually clean, this is not needed
 # rm -f ~/.config/nvim

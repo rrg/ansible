@@ -41,13 +41,9 @@ setopt auto_cd # cd by typing directory name if it's not a command
 # Disable annoying nyae autocorrect
 unsetopt correct_all
 
-#Git
-git config --global core.editor nvim
-
 # set of custom aliases
 alias vim="nvim"
 alias al="ls -al"
-
 alias ans="cd ~/ansible"
 
 
