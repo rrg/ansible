@@ -18,10 +18,10 @@
 
 
   # Plays
- - name: Install Homebrew Packages
+  - name: Install Homebrew Packages
    import_tasks: tasks/homebrew-packages.yml 
 
- - name: OSX Defaults
+  - name: OSX Defaults
    import_tasks: tasks/osx-defaults.yml
 
   - name: Install all things terminal
