@@ -43,7 +43,7 @@ unsetopt correct_all
 alias vim="nvim"
 alias al="ls -al"
 
-
+alias ans="cd ~/ansible"
 
 
 
