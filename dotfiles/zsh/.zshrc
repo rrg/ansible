@@ -25,19 +25,24 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 
 #History setup
-HISTFILE=$HOME/.zsh_history
-HISTSIZE=100000
-SAVEHIST=$HISTSIZ
+HISTFILE='~/zsh/.zsh-history'
+HISTSIZE=500000
+SAVEHIST=500000
+setopt appendhistory
+setopt INC_APPEND_HISTORY  
+setopt SHARE_HISTORY
+
 
 eval $(/opt/homebrew/bin/brew shellenv)
 
 setopt hist_ignore_all_dups # remove older duplicate entries from history
 setopt hist_reduce_blanks # remove superfluous blanks from history items
 setopt auto_cd # cd by typing directory name if it's not a command
-
 # Disable annoying nyae autocorrect
 unsetopt correct_all
 
+#Git
+git config --global core.editor nvim
 
 # set of custom aliases
 alias vim="nvim"
