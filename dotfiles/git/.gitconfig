@@ -1,3 +1,8 @@
 [core]
 	editor = nvim
 	excludesfile = ~/.gitignore
+	pager = nvim -R
+[color]
+	pager = no
+[user]
+	name = gandhi

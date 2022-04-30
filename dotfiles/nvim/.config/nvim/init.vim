@@ -47,6 +47,9 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
+" avoid pressing q all the time
+nnoremap Q q
+nnoremap q <Nop>
 
 " Move lines up and down
 vnoremap J :m '>+1<CR>gv=gv
