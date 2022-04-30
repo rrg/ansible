@@ -31,4 +31,5 @@
 	"word_wrap": true,
 	"trim_trailing_white_space_on_save": true,
 	"auto_close_tags": true,
+	"theme": "Default Dark.sublime-theme",
 }

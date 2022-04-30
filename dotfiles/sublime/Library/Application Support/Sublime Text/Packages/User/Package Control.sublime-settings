@@ -2,6 +2,9 @@
 	"bootstrapped": true,
 	"installed_packages":
 	[
+		"AdvancedNewFile",
+		"Compare Side-By-Side",
+		"Open URL",
 		"Package Control",
 		"Pretty JSON",
 	],
