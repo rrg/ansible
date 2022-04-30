@@ -42,3 +42,21 @@ unsetopt correct_all
 # set of custom aliases
 alias vim="nvim"
 alias al="ls -al"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
