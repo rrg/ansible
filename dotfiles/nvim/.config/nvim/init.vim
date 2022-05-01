@@ -6,6 +6,11 @@ set relativenumber
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
+set splitright
+
+
+cnoreabbrev H vert h
+
 
 call plug#begin('~/.vim/plugged')
 Plug 'ayu-theme/ayu-vim'

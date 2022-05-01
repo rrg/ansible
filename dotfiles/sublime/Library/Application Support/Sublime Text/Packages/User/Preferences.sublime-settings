@@ -2,7 +2,8 @@
 	"font_size": 21,
 	"ignored_packages":
 	[
-		"Vintage",
+		// "Vintage",
+/*"Terminal",*/
 	],
 	"translate_tabs_to_spaces": true,
 

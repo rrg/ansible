@@ -25,6 +25,7 @@
       - tree
       - wget
       - stow
+      - pyenv
   homebrew:
     name: '{{ homebrew_packages }}'
     state: latest
