@@ -4,5 +4,6 @@
 	pager = nvim -R
 [color]
 	pager = no
+	ui = auto
 [user]
 	name = gandhi
