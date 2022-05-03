@@ -44,6 +44,7 @@
       - alfred
       - whatsapp
       - amethyst
+      - visual-studio-code
   community.general.homebrew_cask:
     name: '{{ homebrew_cask_packages }}'
     state: present
