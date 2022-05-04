@@ -1,0 +1,36 @@
+{
+    // "fb.remote-connections.hosts": [
+    //     {
+    //         "hostname": "devbig353.ftw3.facebook.com",
+    //         "folders": [
+    //             "/data/users/gandhi/configerator/",
+    //             "/data/users/gandhi/www-hg/",
+    //             "/data/users/gandhi/fbsource/fbcode/"
+    //         ]
+    //     }
+    // ],
+    // // Cisco AnyWhere VPN Host to connect to, for example 'Americas West'
+	// "fb.vpn.hostName": "",
+    
+    "workbench.colorTheme": "Sublime VSCode Theme",
+    "window.zoomLevel" : 2,
+    "editor.fontSize": 17,
+    "editor.fontFamily": "Ubuntu Mono derivative Powerline, 'Courier New', Menlo, Monaco, monospace",
+
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline",
+    "terminal.integrated.fontSize": 15,
+
+    // "interactive-smartlog.pull": "arc pull",
+    // "interactive-smartlog.fetch": "jf get",
+    "editor.suggestSelection": "first",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    // "[cpp]": {
+    //     "editor.defaultFormatter": "nuclide.cpp"
+    // },
+    "workbench.panel.defaultLocation": "right",
+    "editor.minimap.enabled": false,
+    "zenMode.fullScreen": false,
+    "workbench.activityBar.visible": false
+}           
