@@ -32,5 +32,20 @@
     "workbench.panel.defaultLocation": "right",
     "editor.minimap.enabled": false,
     "zenMode.fullScreen": false,
-    "workbench.activityBar.visible": false
+    "workbench.iconTheme": "material-icon-theme",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.workspaceFolder": "/Users/rohit/.leetcode",
+    "leetcode.defaultLanguage": "cpp",
+    "leetcode.showDescription": "Both",
+    "debug.onTaskErrors": "showErrors",
+
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wrappingIndent": "same",
+    "editor.wordWrapColumn": 80,
+    "C_Cpp.default.compilerPath": "/usr/bin/clang",
+    "leetcode.hint.commandShortcut": false,
+
+    "code-runner.executorMap": {
+        "python": "python3 -u",
+    }
 }           
