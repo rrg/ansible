@@ -1,16 +1,5 @@
 {
-    // "fb.remote-connections.hosts": [
-    //     {
-    //         "hostname": "devbig353.ftw3.facebook.com",
-    //         "folders": [
-    //             "/data/users/gandhi/configerator/",
-    //             "/data/users/gandhi/www-hg/",
-    //             "/data/users/gandhi/fbsource/fbcode/"
-    //         ]
-    //     }
-    // ],
-    // // Cisco AnyWhere VPN Host to connect to, for example 'Americas West'
-	// "fb.vpn.hostName": "",
+
     
     "workbench.colorTheme": "Sublime VSCode Theme",
     "window.zoomLevel" : 2,
