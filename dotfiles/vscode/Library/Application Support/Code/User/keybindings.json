@@ -74,8 +74,33 @@
             "key": "alt+tab",
             "command": "workbench.action.navigateEditorGroups"
         },
+
+        // enable after leetcode
+        {
+            "key": "cmd+l",
+            "command": "extension.multiCommand.execute",
+            "args": { 
+                "sequence": [
+                    "leetcode.testSolution",
+                    "cursorDown",
+                    "cursorDown",
+                ]
+            }
+        },
+
+        { 
+            "key": "cmd+t",                
+            "command": "workbench.action.terminal.toggleTerminal",
+            "when": "terminal.active" 
+        },
+
         
         // Multi Command, toggle side bar and activity bar
+        // { 
+        //     "key": "cmd+b",                 
+        //     "command": "workbench.action.terminal.runActiveFile" 
+        // },
+        
         {
             "key": "cmd+k cmd+b", 
             "command": "extension.multiCommand.execute",
@@ -85,5 +110,10 @@
                     "workbench.action.toggleActivityBarVisibility"
                 ]
             },
+        },
+        {
+            "key": "cmd+b",
+            "command": "code-runner.run",
+            "when": "editorLangId == python"
         }
     ]
